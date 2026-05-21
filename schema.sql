@@ -1,23 +1,23 @@
 Create database superstore_analysis;
 use superstore_analysis;
 
-Create table orders (
-row_id       int,
-order_id     varchar(20),
-order_date   date,
-ship_date    date,
-ship_mode    varchar(30),
-customer_id  varchar(20),
-customer_name varchar(50),
-segment      varchar(20),
-country      varchar(30),
-city         varchar(20),
-state        varchar(20),
-postal_code  varchar(10),
-region       varchar(20),
-product_id   varchar(40),
-category     varchar(50),
-sub_category varchar(50),
-product_name varchar(150),
-sales        decimal(10,2)
+CREATE TABLE orders (
+    row_id        INT,
+    order_id      VARCHAR(20),
+    order_date    VARCHAR(15),
+    ship_date     VARCHAR(15),
+    ship_mode     VARCHAR(30),
+    customer_id   VARCHAR(20),
+    customer_name VARCHAR(50),
+    segment       VARCHAR(20),
+    country       VARCHAR(30),
+    city          VARCHAR(50),
+    state         VARCHAR(30),
+    postal_code   VARCHAR(10),
+    region        VARCHAR(20),
+    product_id    VARCHAR(20),
+    category      VARCHAR(30),
+    sub_category  VARCHAR(30),
+    product_name  VARCHAR(200),
+    sales         DECIMAL(10,4)
 );
